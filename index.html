@@ -875,6 +875,7 @@ footer a{color:var(--text-2)}
         <div class="legal">Minősített többség az igen oldalon → pozitív vélemény</div>
         <p>Az Európai Bizottság elfogadja a végrehajtási jogi aktust, az RDW pedig kiadhatja az EU-szerte érvényes típusjóváhagyást. Nem kell többé országonkénti elismerés.</p>
         <p>A Tesla ezután országonként élesíti a funkciót a jogosult (HW4-es) autókon – várhatóan hetek–hónapok alatt, fokozatosan.</p>
+        <p>Néhány nemszavazat nem akadály, amíg az ellenzők nem érik el a blokkoló kisebbséget.</p>
         <div class="out"><b>FSD az egész EU-ban, Magyarországon is</b>A feltételek (HW4, szoftverág, előfizetés) ugyanazok maradnak.</div>
       </div>
       <div class="sc b">
@@ -890,10 +891,10 @@ footer a{color:var(--text-2)}
         <div class="vote" aria-hidden="true"></div>
         <span class="tag amber">C</span>
         <h4>A kisebbség elutasítja</h4>
-        <div class="legal">A kimenet azon múlik, eléri-e az ellenzők köre a blokkoló kisebbséget</div>
-        <p><strong>Ha nem éri el</strong> (kevesebb mint 4 ország vagy legfeljebb 35% népesség), és az igenek megvannak, a javaslat átmegy → <strong>A</strong> forgatókönyv.</p>
-        <p><strong>Ha eléri</strong> – például Németország + Franciaország + Olaszország + Svédország (kb. 49%) –, az igen oldal nem jut el a 65%-ig → <strong>B</strong> forgatókönyv.</p>
-        <div class="out"><b>Átmegy vagy elakad</b>A három legnagyobb ország önmagában nem tud blokkolni – kell egy negyedik.</div>
+        <div class="legal">Blokkoló kisebbség: legalább 4 ország és 35%+ népesség → nincs minősített többség</div>
+        <p>Néhány nagy ország is meg tudja állítani a javaslatot. Például <strong>Németország + Franciaország + Olaszország + Svédország</strong> csak 4 ország a 27-ből, de együtt az EU népességének kb. 49%-a. Így hiába szavaz igennel 23 ország, az igen oldal csak kb. 51%-ot képvisel, és nem jut el a 65%-ig.</p>
+        <p>A következmény ugyanaz, mint a <strong>B</strong> esetben: a Bizottság nem fogadhatja el az aktust, jöhet módosított javaslat vagy fellebbviteli bizottság. A nemzeti elismerések addig érvényben maradnak.</p>
+        <div class="out"><b>Elakad – kevés ország is megállíthatja</b>A három legnagyobb ország önmagában nem tud blokkolni – kell egy negyedik.</div>
       </div>
       <div class="sc d">
         <div class="vote" aria-hidden="true"></div>
@@ -1162,9 +1163,9 @@ footer a{color:var(--text-2)}
     var k=['a','b','c','d'].filter(function(x){return sc.classList.contains(x)})[0],v=sc.querySelector('.vote');
     if(k==='c'){
       // Népesség szerinti sávok: itt nem az országok száma, hanem a népesség dönt
-      var rows=[{l:'FR + SE nem (≈18%)',n:17.6,r:'átmegy',c:'ok'},{l:'DE + FR + IT + SE nem (≈49%)',n:49.3,r:'elakad',c:'bad'}];
-      v.className='popbars';v.removeAttribute('aria-hidden');v.setAttribute('aria-label','Népesség szerinti példa: kis elutasító kisebbség esetén a javaslat átmegy, blokkoló kisebbség esetén elakad');
-      v.innerHTML=rows.map(function(r){return '<div class="pb"><small><span>'+r.l+'</span><b class="'+r.c+'">'+r.r+'</b></small><div class="pb-track" aria-hidden="true"><i class="y" style="width:'+(100-r.n)+'%"></i><i class="n" style="width:'+r.n+'%"></i><span class="m"></span></div></div>'}).join('')+'<div class="pb-note">A függőleges jel a 65%-os népességküszöb: ha a kék eléri, a javaslat átmegy.</div>';
+      var rows=[{l:'23 ország igen · DE + FR + IT + SE nem (≈49%)',n:49.3,r:'elakad',c:'bad'}];
+      v.className='popbars';v.removeAttribute('aria-hidden');v.setAttribute('aria-label','Népesség szerinti példa: 23 ország igennel szavaz, de a 4 nemmel szavazó nagy ország az EU népességének kb. 49%-a, így az igen oldal nem éri el a 65%-ot');
+      v.innerHTML=rows.map(function(r){return '<div class="pb"><small><span>'+r.l+'</span><b class="'+r.c+'">'+r.r+'</b></small><div class="pb-track" aria-hidden="true"><i class="y" style="width:'+(100-r.n)+'%"></i><i class="n" style="width:'+r.n+'%"></i><span class="m"></span></div></div>'}).join('')+'<div class="pb-note">Népesség szerint. A függőleges jel a 65%-os küszöb – a kék (≈51%) nem éri el.</div>';
       return;
     }
     pat[k].split('').forEach(function(ch){var i=document.createElement('i');if(ch==='y')i.className='y';if(ch==='n')i.className='n';v.appendChild(i)});
