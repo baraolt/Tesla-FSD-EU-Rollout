@@ -422,6 +422,15 @@ table.cmp td.fsd{background:rgba(62,106,225,.05)}
 .sc .vote i{flex:1;border-radius:2px;background:var(--track)}
 .sc .vote i.y{background:var(--blue)}
 .sc .vote i.n{background:var(--red)}
+.popbars{display:flex;flex-direction:column;gap:9px;margin-bottom:18px}
+.pb small{display:flex;justify-content:space-between;gap:8px;font-size:.72rem;color:var(--muted);margin-bottom:4px;line-height:1.3}
+.pb small b{font-weight:600}
+.pb small b.ok{color:var(--ok-text)}.pb small b.bad{color:var(--bad-text)}
+.pb-note{font-size:.72rem;color:var(--muted);line-height:1.35}
+.pb-track{position:relative;height:8px;display:flex;gap:2px}
+.pb-track i{border-radius:2px}
+.pb-track i.y{background:var(--blue)}.pb-track i.n{background:var(--red)}
+.pb-track .m{position:absolute;left:65%;top:-3px;bottom:-3px;width:2px;background:var(--text-strong);border-radius:1px}
 .sc .tag{align-self:flex-start}
 .sc h4{font-size:1.1rem;margin-bottom:4px}
 .sc .legal{font-size:.8rem;color:var(--muted);margin-bottom:14px}
@@ -883,7 +892,7 @@ footer a{color:var(--text-2)}
         <h4>A kisebbség elutasítja</h4>
         <div class="legal">A kimenet azon múlik, eléri-e az ellenzők köre a blokkoló kisebbséget</div>
         <p><strong>Ha nem éri el</strong> (kevesebb mint 4 ország vagy legfeljebb 35% népesség), és az igenek megvannak, a javaslat átmegy → <strong>A</strong> forgatókönyv.</p>
-        <p><strong>Ha eléri</strong> – például Németország + Franciaország + Olaszország + Svédország (kb. 48%) –, az igen oldal nem jut el a 65%-ig → <strong>B</strong> forgatókönyv.</p>
+        <p><strong>Ha eléri</strong> – például Németország + Franciaország + Olaszország + Svédország (kb. 49%) –, az igen oldal nem jut el a 65%-ig → <strong>B</strong> forgatókönyv.</p>
         <div class="out"><b>Átmegy vagy elakad</b>A három legnagyobb ország önmagában nem tud blokkolni – kell egy negyedik.</div>
       </div>
       <div class="sc d">
@@ -1151,6 +1160,13 @@ footer a{color:var(--text-2)}
   var pat={a:'yyyyyyyyyyyyyyyyyyyyynnnnnn',b:'yyyyyyyyyyy--------nnnnnnnn',c:'yyyyyyyyyyyyyyyyyyy---nnnnn',d:'yyyynnnnnnnnnnnnnnnnnnnn---'};
   document.querySelectorAll('.sc').forEach(function(sc){
     var k=['a','b','c','d'].filter(function(x){return sc.classList.contains(x)})[0],v=sc.querySelector('.vote');
+    if(k==='c'){
+      // Népesség szerinti sávok: itt nem az országok száma, hanem a népesség dönt
+      var rows=[{l:'FR + SE nem (≈18%)',n:17.6,r:'átmegy',c:'ok'},{l:'DE + FR + IT + SE nem (≈49%)',n:49.3,r:'elakad',c:'bad'}];
+      v.className='popbars';v.removeAttribute('aria-hidden');v.setAttribute('aria-label','Népesség szerinti példa: kis elutasító kisebbség esetén a javaslat átmegy, blokkoló kisebbség esetén elakad');
+      v.innerHTML=rows.map(function(r){return '<div class="pb"><small><span>'+r.l+'</span><b class="'+r.c+'">'+r.r+'</b></small><div class="pb-track" aria-hidden="true"><i class="y" style="width:'+(100-r.n)+'%"></i><i class="n" style="width:'+r.n+'%"></i><span class="m"></span></div></div>'}).join('')+'<div class="pb-note">A függőleges jel a 65%-os népességküszöb: ha a kék eléri, a javaslat átmegy.</div>';
+      return;
+    }
     pat[k].split('').forEach(function(ch){var i=document.createElement('i');if(ch==='y')i.className='y';if(ch==='n')i.className='n';v.appendChild(i)});
   });
 
