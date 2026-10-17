@@ -2,7 +2,7 @@
  * FSD tesztvideók – adatfájl
  * Új videó felvétele: másolj le egy blokkot, és írd át.
  *   id    – a YouTube-videó azonosítója (a youtu.be/ utáni, vagy a watch?v= utáni rész)
- *   c     – ország kódja (NL, LT, EE, DK, BE, SI, CZ, HR)
+ *   c     – ország kódja (NL, LT, EE, DK, BE, SI, CZ, HR, SK)
  *   t     – a videó eredeti címe
  *   ch    – csatorna neve
  *   lang  – a videó nyelve: hu, en, nl, da, lt, et, sl
@@ -32,6 +32,12 @@ window.FSD_VIDEOS = [
     t:'Tesla FSD (Supervised) vs Zagreb traffic part I',
     tags:['város','bemutató út'],
     note:'Tesla-bemutató út Zágráb sűrű forgalmában, még a horvát jóváhagyás előtt (2026 január).' },
+
+  // ── Szlovákia ─────────────────────────────────────────────────
+  { id:'8hVkZnGnfo4', c:'SK', prio:2, lang:'en', ch:'robot*irl', d:'2026-10-17', min:22,
+    t:'Tesla FSD in Slovakia – FIRST DRIVE',
+    tags:['első út','határ','autópálya'],
+    note:'Az első út Szlovákiában, egy nappal a bevezetés után: autópályán a szlovák határig – vajon az FSD átjut-e rajta?' },
 
   // ── Csehország ────────────────────────────────────────────────
   { id:'2DGgjrx-RRw', c:'CZ', prio:2, lang:'en', ch:'robot*irl', d:'2026-09-22', min:31,
