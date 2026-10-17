@@ -36,8 +36,8 @@ window.FSD_VIDEOS = [
   // ── Szlovákia ─────────────────────────────────────────────────
   { id:'8hVkZnGnfo4', c:'SK', prio:2, lang:'en', ch:'robot*irl', d:'2026-10-17', min:22,
     t:'Tesla FSD in Slovakia – FIRST DRIVE',
-    tags:['első út','határ','autópálya'],
-    note:'Az első út Szlovákiában, egy nappal a bevezetés után: autópályán a szlovák határig – vajon az FSD átjut-e rajta?' },
+    tags:['első út','határ','város','villamos','kereszteződés'],
+    note:'Cseh Model Y-jal a jóváhagyás másnapján: előbb a határátlépés (legutóbb ilyenkor néhány méter után leállt az FSD), majd egy teljes kör Pozsonyban – vár, UFO-híd, villamosok és egy kemény, védetlen balra kanyar.' },
 
   // ── Csehország ────────────────────────────────────────────────
   { id:'2DGgjrx-RRw', c:'CZ', prio:2, lang:'en', ch:'robot*irl', d:'2026-09-22', min:31,
