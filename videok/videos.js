@@ -2,7 +2,7 @@
  * FSD tesztvideók – adatfájl
  * Új videó felvétele: másolj le egy blokkot, és írd át.
  *   id    – a YouTube-videó azonosítója (a youtu.be/ utáni, vagy a watch?v= utáni rész)
- *   c     – ország kódja (NL, LT, EE, DK, BE, SI, CZ, HR, SK)
+ *   c     – ország kódja (NL, LT, EE, DK, BE, SI, CZ, HR, SK, LV)
  *   t     – a videó eredeti címe
  *   ch    – csatorna neve
  *   lang  – a videó nyelve: hu, en, nl, da, lt, et, sl

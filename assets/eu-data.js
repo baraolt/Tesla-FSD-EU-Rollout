@@ -15,7 +15,7 @@ window.FSD_EU = (function () {
   };
 
   // Engedélyező országok és az elismerés dátuma (sorrendben)
-  var approved = {NL:'2026. ápr. 10.',LT:'2026. máj. 20.',EE:'2026. máj. 29.',DK:'2026. jún. 9.',BE:'2026. jún. 10.',SI:'2026. szept. 7.',CZ:'2026. szept. 21.',HR:'2026. szept. 29.',SK:'2026. okt. 16.'};
+  var approved = {NL:'2026. ápr. 10.',LT:'2026. máj. 20.',EE:'2026. máj. 29.',DK:'2026. jún. 9.',BE:'2026. jún. 10.',SI:'2026. szept. 7.',CZ:'2026. szept. 21.',HR:'2026. szept. 29.',SK:'2026. okt. 16.',LV:'2026. okt. 26.'};
   var support = ['DE'];   // nyilvánosan, feltételekkel támogatja az EU-s jóváhagyást
   var objection = ['FR','SE'];
   var review = ['IT','ES','FI','IE','GR','HU'];
@@ -26,7 +26,8 @@ window.FSD_EU = (function () {
     DK:'Saját műszaki vizsgálat után ismerte el a holland jóváhagyást.',
     LT:'Elsőként követte Hollandiát, önálló tesztelés nélkül.',EE:'Elismerte a holland tanúsítványt.',
     SI:'Nyár végén csatlakozott.',CZ:'Hetedik országként ismerte el.',HR:'Szeptember végén nyolcadikként csatlakozott.',
-    SK:'A legfrissebb: kilencedik engedélyező országként október 16-án indult el a bevezetés (a Tesla Europe bejelentése szerint).',
+    SK:'Kilencedik engedélyező országként október 16-án indult el a bevezetés (a Tesla Europe bejelentése szerint).',
+    LV:'A legfrissebb: tizedik engedélyező országként október 26-án jóváhagyta az FSD-t / TAD-ot (a Tesla Europe bejelentése szerint). Ezzel mindhárom balti állam engedélyező ország.',
     FR:'Szerint a biztonsági kompromisszumok még nem elegendőek (gyorshajtás, figyelem városi forgalomban); az EU-s döntést várja.',
     SE:'A sebességhatár feletti, beállítható eltérés kikapcsolását kéri; aggályai vannak a téli körülmények miatt.',
     DE:'A BMV (okt. 6.) szerint megállapodtak a Teslával: legfeljebb +10% a sebességhatár felett (eddig akár +50%), a rendszer pedig októbertől „Tesla Assisted Driving” (TAD) néven fut Európában. Németország „konstruktívan támogatja” az EU-s eljárást; formális szavazási ígéret nincs.',
