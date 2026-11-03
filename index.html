@@ -647,7 +647,7 @@ footer a{color:var(--text-2)}
       <a class="btn" href="#autopilot">Kezdjük az alapokkal</a>
       <a class="btn ghost" href="#eu">EU-s helyzet</a>
     </div>
-    <div class="updated">Utolsó frissítés: 2026. október 26.</div>
+    <div class="updated">Utolsó frissítés: 2026. november 3.</div>
   </div>
 </section>
 
@@ -801,10 +801,15 @@ footer a{color:var(--text-2)}
         <h4>FSD 14.2.2.6 Europe</h4>
         <p>A <code>2026.17.5</code>-ös szoftverrel. Az európai FSD külön, lassabb ütemben frissül: máshol már a 14.3.x fut.</p>
       </div>
-      <div class="tl-item now">
+      <div class="tl-item">
         <div class="tl-date">2026. október – mérföldkő</div>
         <h4>Az FSD-ből Európában TAD lesz</h4>
         <p>Német kérésre a Tesla átnevezte a rendszert: Európában <strong>Tesla Assisted Driving (TAD)</strong> a neve, a Tesla magyar oldalán is már így szerepel. A rendszer ugyanaz – 2. szintű, felügyelt vezetéstámogató –, csak a „Full Self-Driving” név nem sugallja többé, hogy az autó magától vezet.</p>
+      </div>
+      <div class="tl-item now">
+        <div class="tl-date">2026. október 29.</div>
+        <h4>2026.39.6 – a TAD-ág felzárkózik</h4>
+        <p>Fokozatosan, kis tételekben indul a <code>2026.39.6</code>. Az FSD-verzió továbbra is 14.2.2.6 (változatlan kiadási megjegyzések, valószínűleg hibajavító kiadás), de a TAD-ág ezzel a 2026.38-as alapra kerül, így megkapja a sima ág újdonságait, pl. a Halloween módot.</p>
       </div>
     </div>
 
@@ -881,8 +886,8 @@ footer a{color:var(--text-2)}
     </div>
 
     <div class="grid g3 reveal" style="margin-top:clamp(36px,5vh,56px)">
-      <div class="card"><h4>Miért kisebb a verziószám?</h4><p>Az FSD-ág (pl. <code>2026.27.300</code>) „lemaradva” követi a sima ágat (<code>2026.32.x</code>, <code>2026.38.x</code>). Az új funkciók – pl. a Nyári frissítés – néhány héttel később, beolvasztva érkeznek meg rá.</p></div>
-      <div class="card"><h4>Miért nem kapom meg én is?</h4><p>Az ágat nem lehet választani: a Tesla a jogosultság (HW4 + első forgalomba helyezés országa) alapján osztja ki. Ha az autód a 2026.32.x-et kapta, a sima ágon vagy.</p></div>
+      <div class="card"><h4>Miért kisebb a verziószám?</h4><p>Az FSD-ág (pl. <code>2026.27.300</code>, <code>2026.33.100</code>) „lemaradva” követi a sima ágat (<code>2026.32.x</code>, <code>2026.38.x</code>). Az új funkciók – pl. a Nyári frissítés vagy a Halloween mód – néhány héttel később, beolvasztva érkeznek meg rá; a legfrissebb TAD-kiadás, a <code>2026.39.6</code> már a 2026.38-as alapra épül.</p></div>
+      <div class="card"><h4>Miért nem kapom meg én is?</h4><p>Az ágat nem lehet választani: a Tesla a jogosultság (HW4 + első forgalomba helyezés országa) alapján osztja ki. Ha az autód FSD/TAD-címke nélküli verziót kapott (pl. 2026.38.x), a sima ágon vagy.</p></div>
       <div class="card"><h4>Mi történik egy EU-s jóváhagyás után?</h4><p>Ha a kör bővül, az új országok jogosult autói az FSD-ágra kerülhetnek át. Ez országonként, fokozatosan történik – nem egy napon mindenkinél.</p></div>
     </div>
   </div>
@@ -1108,6 +1113,8 @@ footer a{color:var(--text-2)}
       <li><a href="https://www.tesla.com/hu_hu/tesla-assisted-driving" target="_blank" rel="noopener">Tesla – Tesla Assisted Driving (magyar oldal)</a></li>
       <li><a href="https://insideevs.com/news/811088/tesla-fsd-gains-support-germany/" target="_blank" rel="noopener">InsideEVs – Tesla FSD gets the green light from Germany, but it might need a new name</a></li>
       <li><a href="https://www.notateslaapp.com/software-updates/version/2026.33.100/release-notes" target="_blank" rel="noopener">Not a Tesla App – 2026.33.100 release notes</a></li>
+      <li><a href="https://www.notateslaapp.com/software-updates/version/2026.39.6/release-notes" target="_blank" rel="noopener">Not a Tesla App – 2026.39.6 release notes</a></li>
+      <li><a href="https://x.com/TeslaNewswire/status/2115924655902978314" target="_blank" rel="noopener">The Tesla Newswire (X) – 2026.39.6 with FSD 14.2.2.6 rolling out in Europe</a></li>
       <li><a href="https://www.bmv.de/SharedDocs/DE/Artikel/StV/Digitalisierung-der-Mobilitaet/aktueller-stand-tesla-assistenzsysteme.html" target="_blank" rel="noopener">BMV – Aktueller Stand bei der Genehmigung eines Tesla-Assistenzsystems (2026.10.06.)</a></li>
       <li><a href="https://www.notateslaapp.com/news/4778/germany-will-support-fsd-in-eu-vote-if-tesla-renames-it" target="_blank" rel="noopener">Not a Tesla App – Germany will support FSD in EU vote if Tesla renames it</a></li>
       <li><a href="https://www.notateslaapp.com/news/4777/tesla-rolls-out-halloween-mode-with-update-2026383" target="_blank" rel="noopener">Not a Tesla App – Halloween mode with update 2026.38.3</a></li>
@@ -1321,8 +1328,9 @@ footer a{color:var(--text-2)}
     {d:'szept. 15.',f:{v:'2026.27.300',b:'FSD 14.2.2.6 Europe'}},
     {d:'szept. 23.',s:{v:'2026.32.7',n:'Javítások'}},
     {d:'szept. 30.',s:{v:'2026.38'}},
-    {d:'okt. 1.',f:{v:'2026.33.100',b:'TAD (FSD 14.2.2.6) Europe',isNew:1,n:'Legfrissebb TAD-ág · ↩ a 2026.32 funkciói',m:1}},
-    {d:'okt. 6.',s:{v:'2026.38.3',n:'Halloween mód 👻 · legfrissebb sima ág'}}
+    {d:'okt. 1.',f:{v:'2026.33.100',b:'TAD (FSD 14.2.2.6) Europe',n:'↩ a 2026.32 funkciói',m:1}},
+    {d:'okt. 6.',s:{v:'2026.38.3',n:'Halloween mód 👻'}},
+    {d:'okt. 29.',f:{v:'2026.39.6',b:'TAD (FSD 14.2.2.6) Europe',isNew:1,n:'Legfrissebb TAD-ág · ↩ a 2026.38 funkciói (Halloween mód) · fokozatos bevezetés',m:1}}
   ];
   var host=document.getElementById('brRows');
   function cell(x,fsd){
