@@ -34,7 +34,7 @@ window.FSD_EU = (function () {
     DE:'A BMV (okt. 6.) szerint megállapodtak a Teslával: legfeljebb +10% a sebességhatár felett (eddig akár +50%), a rendszer pedig októbertől „Tesla Assisted Driving” (TAD) néven fut Európában. Németország „konstruktívan támogatja” az EU-s eljárást; formális szavazási ígéret nincs. A 2026.39.100-as szoftver (nov.) mindkét feltételt beépíti: TAD-név az autóban, max. +10% eltérés, amely minden út után 0%-ra áll vissza.',
     IT:'Vizsgálja; a Tesla egyeztet a hatósággal.',ES:'Vizsgálja, nem ismerte el a holland jóváhagyást.',
     IE:'A Tesla egyeztet a hatósággal.',GR:'Vizsgálja; a sajtó szerint halad az elismerés felé.',
-    HU:'A KBM (2026. júl.) szerint nincs egyedi engedély, az uniós döntést várja. A Tesla Owners Club Hungary nyílt levélben kérte az elismerést.'
+    HU:'November 15-én a kormány bejelentette: az uniós döntéstől függetlenül hatósági tesztprogramot indít az FSD-re / TAD-ra, hogy kiderüljön, biztonságosan és a magyar KRESZ szerint közlekedik-e. Kezdő időpont még nincs. (Nyáron a KBM még az EU-s döntést várta; szeptemberben a Tesla Owners Club Hungary nyílt levélben kérte az elismerést.)'
   };
 
   var total = 0; for (var k in countries) total += countries[k].p;
